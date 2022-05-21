@@ -1,0 +1,108 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Acessar aplicação",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 21094710531,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Login com sucesso",
+        "description": "",
+        "id": "login;login-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 339249317,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "preencho login \"eduardo.finotti@qazando.com\" e senha \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "eduardo.finotti@qazando.com",
+                  "offset": 16
+                },
+                {
+                  "val": "123456",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginSteps.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 721547241,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico em Login",
+            "match": {
+              "location": "LoginSteps.clico_em_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: Os textos não são iguais! expected:\u003c[Login realizado]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat pages.LoginPage.verificaLoginSucesso(LoginPage.java:39)\n\tat steps.LoginSteps.sou_logado_na_aplicação(LoginSteps.java:36)\n\tat ✽.sou logado na aplicação(src/test/resources/features/login.feature:16)\n",
+              "duration": 19709748,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "sou logado na aplicação",
+            "match": {
+              "location": "LoginSteps.sou_logado_na_aplicação()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-sucesso"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "    Eu como usuário do sistema\n    Quero fazer login\n    Para fazer uma compra no site",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
