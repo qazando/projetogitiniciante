@@ -3,6 +3,8 @@ name: Java CI with Maven
 on:
   pull_request:
     branches: [ master ]
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   build:
@@ -22,6 +24,7 @@ jobs:
         run: |
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt install ./google-chrome*.deb
+
       - uses: nanasess/setup-chromedriver@v1
       - run: |
           export DISPLAY=:99
