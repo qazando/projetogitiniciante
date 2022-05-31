@@ -25,9 +25,7 @@ public class RunBase {
         switch (browser) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--no-sandbox");
                 chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("disable-gpu");
 
                 driver = new ChromeDriver(chromeOptions);
                 break;

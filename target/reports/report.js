@@ -22,7 +22,8 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".right_list_fix \u003e li \u003e .auhsuahs\"}\n  (Session info: headless chrome\u003d102.0.5005.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MMB033899CPS.local\u0027, ip: \u00272804:1b2:6241:546b:3060:d19:3e32:8c55%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/x6/bygd80596p1...}, goog:chromeOptions: {debuggerAddress: localhost:50362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4c85f95203c9f815034bd423568ead37\n*** Element info: {Using\u003dcss selector, value\u003d.right_list_fix \u003e li \u003e .auhsuahs}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat pages.LoginPage.acessarTelaLogin(LoginPage.java:23)\n\tat steps.LoginSteps.que_estou_na_tela_de_login(LoginSteps.java:20)\n\tat ✽.que estou na tela de login(src/test/resources/features/login.feature:10)\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "Login com sucesso",
@@ -45,7 +46,7 @@ formatter.match({
   "location": "LoginSteps.preencho_login_e_senha(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "clico em Login",
@@ -55,7 +56,7 @@ formatter.match({
   "location": "LoginSteps.clico_em_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "sou logado na aplicação",
@@ -65,237 +66,6 @@ formatter.match({
   "location": "LoginSteps.sou_logado_na_aplicação()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Validar mensagem: \u003cmensagem\u003e no login inválido",
-  "description": "",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "name": "@login-campos-vazios"
-    }
-  ]
-});
-formatter.step({
-  "name": "preencho login \"\u003cuser\u003e\" e senha \"\u003cpassword\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "clico em Login",
-  "keyword": "E "
-});
-formatter.step({
-  "name": "vejo mensagem \"\u003cmensagem\u003e\" de campo não preenchido",
-  "keyword": "Então "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Exemplos",
-  "rows": [
-    {
-      "cells": [
-        "user",
-        "password",
-        "mensagem"
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "123456",
-        "E-mail inválido."
-      ]
-    },
-    {
-      "cells": [
-        "email@email.com",
-        "",
-        "Senha inválida."
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "",
-        "E-mail inválido."
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "Acessar aplicação",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "name": "que estou na tela de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_tela_de_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validar mensagem: E-mail inválido. no login inválido",
-  "description": "",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login-campos-vazios"
-    }
-  ]
-});
-formatter.step({
-  "name": "preencho login \"\" e senha \"123456\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "LoginSteps.preencho_login_e_senha(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico em Login",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "LoginSteps.clico_em_Login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "Acessar aplicação",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "name": "que estou na tela de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_tela_de_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validar mensagem: Senha inválida. no login inválido",
-  "description": "",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login-campos-vazios"
-    }
-  ]
-});
-formatter.step({
-  "name": "preencho login \"email@email.com\" e senha \"\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "LoginSteps.preencho_login_e_senha(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico em Login",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "LoginSteps.clico_em_Login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "vejo mensagem \"Senha inválida.\" de campo não preenchido",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "Acessar aplicação",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "name": "que estou na tela de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_tela_de_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validar mensagem: E-mail inválido. no login inválido",
-  "description": "",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login-campos-vazios"
-    }
-  ]
-});
-formatter.step({
-  "name": "preencho login \"\" e senha \"\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "LoginSteps.preencho_login_e_senha(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico em Login",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "LoginSteps.clico_em_Login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });

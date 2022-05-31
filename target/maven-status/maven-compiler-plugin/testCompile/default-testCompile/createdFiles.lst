@@ -1,0 +1,5 @@
+steps/LoginSteps.class
+runner/RunCucumber.class
+runner/RunBase.class
+steps/CadastroSteps.class
+pages/LoginPage.class
