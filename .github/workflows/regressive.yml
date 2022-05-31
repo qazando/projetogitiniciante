@@ -63,3 +63,9 @@ jobs:
           SLACK_TITLE: 'Sucesso na execução de testes :white_check_mark:'
           SLACK_USERNAME: SUCESSO
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: "**/surefire-reports/TEST-*.xml"
