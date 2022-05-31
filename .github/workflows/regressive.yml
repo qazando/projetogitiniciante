@@ -40,6 +40,8 @@ jobs:
           reporter: java-junit
 
       - name: Slack Notification
+        if: always()
+        continue-on-error: true
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_CHANNEL: automação-de-testes
