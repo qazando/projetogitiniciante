@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Scenario Details - 2022/05/14 10:51:35</title> 
+  <title>Scenario Details - 2022/05/31 17:11:31</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -39,7 +39,7 @@
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2022/05/14 10:51:35</span> 
+    <span class="text-light">2022/05/31 17:11:31</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
@@ -73,10 +73,10 @@
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
          <li class="list-group-item"><strong>4</strong> Step(s)</li> 
-         <li class="list-group-item"><strong>0</strong> passed</li> 
+         <li class="list-group-item"><strong>3</strong> passed</li> 
          <li class="list-group-item"><strong>1</strong> failed</li> 
-         <li class="list-group-item"><strong>3</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 00s 091ms</li> 
+         <li class="list-group-item"><strong>0</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 17s 269ms</li> 
          <li class="list-group-item"> <a href="pages/tag-scenarios/tag_login.html">@login</a>, <a href="pages/tag-scenarios/tag_login-sucesso.html">@login-sucesso</a> </li> 
         </ul> 
        </div> 
@@ -91,7 +91,7 @@
        </div> 
        <div class="card-body"> 
         <li class="list-group-item"> 
-         <div class="row row_failed"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 1
@@ -102,19 +102,14 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 091ms
+            0m 16s 067ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-danger">failed</span> 
-          </div> 
-          <div class="w-100 mt-3"> 
-           <div class="col-9 text-left border border-danger m-auto"> 
-            <code>java.lang.IllegalArgumentException: Navegador não encontrado! Passe um navegador existente: chrome, forefox ou edge. at runner.RunBase.initDriver(RunBase.java:33) at steps.LoginSteps.que_estou_na_tela_de_login(LoginSteps.java:18) at ✽.que estou na tela de login(src/test/resources/features/login.feature:10) </code> 
-           </div> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 2
@@ -125,14 +120,14 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 01s 086ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_passed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 3
@@ -143,14 +138,14 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 086ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_skipped"> 
+         <div class="row row_failed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 4
@@ -161,11 +156,16 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 029ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-danger">failed</span> 
+          </div> 
+          <div class="w-100 mt-3"> 
+           <div class="col-9 text-left border border-danger m-auto"> 
+            <code>org.junit.ComparisonFailure: Os textos não são iguais! expected:&lt;[Login realizado]&gt; but was:&lt;[]&gt; at org.junit.Assert.assertEquals(Assert.java:115) at pages.LoginPage.verificaLoginSucesso(LoginPage.java:39) at steps.LoginSteps.sou_logado_na_aplicação(LoginSteps.java:36) at ✽.sou logado na aplicação(src/test/resources/features/login.feature:16) </code> 
+           </div> 
           </div> 
          </div> </li> 
        </div> 
@@ -176,7 +176,7 @@
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2022/05/14 10:51:35.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2022/05/31 17:11:31.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -216,9 +216,9 @@
     "datasets": [
       {
         "data": [
-          0,
-          0,
-          0,
+          16067,
+          1086,
+          86,
           0
         ],
         "backgroundColor": [
@@ -232,10 +232,10 @@
       },
       {
         "data": [
-          91,
           0,
           0,
-          0
+          0,
+          29
         ],
         "backgroundColor": [
           "rgba(220, 53, 69, 1.000)",

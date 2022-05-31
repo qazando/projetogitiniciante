@@ -1,11 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumber
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.402 s <<< FAILURE! - in runner.RunCucumber
-Login.Login com sucesso  Time elapsed: 0.102 s  <<< ERROR!
-java.lang.IllegalArgumentException: Navegador não encontrado! Passe um navegador existente: chrome, forefox ou edge.
-
-runner.RunCucumber  Time elapsed: 0.118 s  <<< ERROR!
-java.lang.NullPointerException
-	at runner.RunCucumber.stop(RunCucumber.java:21)
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.635 s <<< FAILURE! - in runner.RunCucumber
+Login.Login com sucesso  Time elapsed: 17.304 s  <<< FAILURE!
+org.junit.ComparisonFailure: Os textos não são iguais! expected:<[Login realizado]> but was:<[]>
 

@@ -15,15 +15,14 @@
       E clico em Login
       Então sou logado na aplicação
 
-#    @login-campos-vazios
-#    Esquema do Cenário: Validar mensagem: <mensagem> no login inválido
-#      Quando preencho login "<user>" e senha "<password>"
-#      E clico em Login
-#      Então vejo mensagem "<mensagem>" de campo não preenchido
-#
-#      Exemplos:
-#      | user            | password | mensagem         |
-#      |                 |   123456 | E-mail inválido. |
-#      | email@email.com |          | Senha inválida.  |
-#      |                 |          | E-mail inválido. |
+    @login-campos-vazios
+    Esquema do Cenário: Validar mensagem: <mensagem> no login inválido
+      Quando preencho login "<user>" e senha "<password>"
+      E clico em Login
+      Então vejo mensagem "<mensagem>" de campo não preenchido
 
+      Exemplos:
+      | user            | password | mensagem         |
+      |                 |   123456 | E-mail inválido. |
+      | email@email.com |          | Senha inválida.  |
+      |                 |          | E-mail inválido. |
