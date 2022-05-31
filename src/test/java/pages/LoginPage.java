@@ -7,7 +7,8 @@ import runner.RunCucumber;
 public class LoginPage extends RunCucumber {
 
     // elementos
-    private String URL = "http://automationpratice.com.br/";
+//    private String URL = "http://automationpratice.com.br/";
+    private String URL = "http://automationpratice.net/";
     private By botaoAcessarLogin = By.cssSelector(".right_list_fix > li > a > .fa-user");
     private By campoEmail = By.id("user");
     private By campoSenha = By.id("password");
