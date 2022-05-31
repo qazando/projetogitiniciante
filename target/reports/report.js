@@ -65,8 +65,7 @@ formatter.match({
   "location": "LoginSteps.sou_logado_na_aplicação()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: Os textos não são iguais! expected:\u003c[Login realizado]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat pages.LoginPage.verificaLoginSucesso(LoginPage.java:39)\n\tat steps.LoginSteps.sou_logado_na_aplicação(LoginSteps.java:36)\n\tat ✽.sou logado na aplicação(src/test/resources/features/login.feature:16)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "name": "Validar mensagem: \u003cmensagem\u003e no login inválido",
