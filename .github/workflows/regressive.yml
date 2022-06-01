@@ -32,14 +32,6 @@ jobs:
       - name: Build with Maven
         run: mvn test -Dtest=RunCucumber -Dbrowser=chrome cluecumber-report:reporting
 
-      - name: Test Reporter
-        if: always()
-        uses: dorny/test-reporter@v1.4.3
-        with:
-          name: Test Reporter
-          path: "**/surefire-reports/TEST-*.xml"
-          reporter: java-junit
-
       - name: Slack Notification
         if: ${{ failure() }}
         uses: rtCamp/action-slack-notify@v2
