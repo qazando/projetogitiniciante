@@ -11,93 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16067204022,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na tela de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_tela_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "Login com sucesso",
-        "description": "",
-        "id": "login;login-com-sucesso",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 1086866361,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "preencho login \"eduardo.finotti@qazando.com\" e senha \"123456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "eduardo.finotti@qazando.com",
-                  "offset": 16
-                },
-                {
-                  "val": "123456",
-                  "offset": 54
-                }
-              ],
-              "location": "LoginSteps.preencho_login_e_senha(String,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 86435542,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "clico em Login",
-            "match": {
-              "location": "LoginSteps.clico_em_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "error_message": "org.junit.ComparisonFailure: Os textos não são iguais! expected:\u003c[Login realizado]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat pages.LoginPage.verificaLoginSucesso(LoginPage.java:39)\n\tat steps.LoginSteps.sou_logado_na_aplicação(LoginSteps.java:36)\n\tat ✽.sou logado na aplicação(src/test/resources/features/login.feature:16)\n",
-              "duration": 29313658,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "sou logado na aplicação",
-            "match": {
-              "location": "LoginSteps.sou_logado_na_aplicação()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@login-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar aplicação",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 2802186444,
+              "duration": 16768116040,
               "status": "passed"
             },
             "line": 10,
@@ -119,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13638116978,
+              "duration": 424895955,
               "status": "passed"
             },
             "line": 20,
@@ -141,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 42704888,
+              "duration": 45994104,
               "status": "passed"
             },
             "line": 21,
@@ -153,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 22093558,
+              "duration": 31230867,
               "status": "passed"
             },
             "line": 22,
@@ -188,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15690524640,
+              "duration": 14608765612,
               "status": "passed"
             },
             "line": 10,
@@ -210,7 +124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 625379176,
+              "duration": 420011768,
               "status": "passed"
             },
             "line": 20,
@@ -232,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 58477312,
+              "duration": 40013320,
               "status": "passed"
             },
             "line": 21,
@@ -244,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 19009581,
+              "duration": 23166741,
               "status": "passed"
             },
             "line": 22,
@@ -279,7 +193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16762260430,
+              "duration": 13599009748,
               "status": "passed"
             },
             "line": 10,
@@ -301,7 +215,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1118314104,
+              "duration": 363630139,
               "status": "passed"
             },
             "line": 20,
@@ -323,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 68578539,
+              "duration": 43729591,
               "status": "passed"
             },
             "line": 21,
@@ -335,7 +249,7 @@
           },
           {
             "result": {
-              "duration": 29322930,
+              "duration": 24163804,
               "status": "passed"
             },
             "line": 22,
