@@ -26,7 +26,7 @@ public class RunBase {
             case "chrome-ci":
                 ChromeOptions option = new ChromeOptions();
                 option.addArguments("--headless");
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(option);
                 break;
             case "chrome-local":
                 driver = new ChromeDriver();
