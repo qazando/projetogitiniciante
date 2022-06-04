@@ -24,10 +24,7 @@ public class RunBase {
 
         switch (browser) {
             case "chrome":
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-
-                driver = new ChromeDriver(chromeOptions);
+                driver = new ChromeDriver();
                 break;
             case "firefox":
                 driver = new FirefoxDriver();
