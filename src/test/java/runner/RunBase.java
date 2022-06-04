@@ -23,7 +23,12 @@ public class RunBase {
         }
 
         switch (browser) {
-            case "chrome":
+            case "chrome-ci":
+                ChromeOptions option = new ChromeOptions();
+                option.addArguments("--headless");
+                driver = new ChromeDriver();
+                break;
+            case "chrome-local":
                 driver = new ChromeDriver();
                 break;
             case "firefox":
