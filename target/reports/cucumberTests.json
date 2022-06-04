@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16067204022,
+              "duration": 16332278814,
               "status": "passed"
             },
             "line": 10,
@@ -33,8 +33,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1086866361,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#xuser\"}\n  (Session info: headless chrome\u003d102.0.5005.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MMB033899CPS.local\u0027, ip: \u00272804:1b2:6241:546b:3060:d19:3e32:8c55%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/x6/bygd80596p1...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ac631d31669736178ba6e435ca5f1af9\n*** Element info: {Using\u003did, value\u003dxuser}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat pages.LoginPage.preencheEmail(LoginPage.java:26)\n\tat steps.LoginSteps.preencho_login_e_senha(LoginSteps.java:25)\n\tat ✽.preencho login \"eduardo.finotti@qazando.com\" e senha \"123456\"(src/test/resources/features/login.feature:14)\n",
+              "duration": 30038686530,
+              "status": "failed"
             },
             "line": 14,
             "name": "preencho login \"eduardo.finotti@qazando.com\" e senha \"123456\"",
@@ -55,8 +56,7 @@
           },
           {
             "result": {
-              "duration": 86435542,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "clico em Login",
@@ -67,9 +67,7 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: Os textos não são iguais! expected:\u003c[Login realizado]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat pages.LoginPage.verificaLoginSucesso(LoginPage.java:39)\n\tat steps.LoginSteps.sou_logado_na_aplicação(LoginSteps.java:36)\n\tat ✽.sou logado na aplicação(src/test/resources/features/login.feature:16)\n",
-              "duration": 29313658,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "sou logado na aplicação",
@@ -85,279 +83,6 @@
           },
           {
             "name": "@login-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar aplicação",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 2802186444,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na tela de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_tela_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 26,
-        "name": "Validar mensagem: E-mail inválido. no login inválido",
-        "description": "",
-        "id": "login;validar-mensagem:-\u003cmensagem\u003e-no-login-inválido;;2",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 13638116978,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho login \"\" e senha \"123456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 16
-                },
-                {
-                  "val": "123456",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginSteps.preencho_login_e_senha(String,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 42704888,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico em Login",
-            "match": {
-              "location": "LoginSteps.clico_em_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 22093558,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "E-mail inválido.",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@login-campos-vazios"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar aplicação",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 15690524640,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na tela de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_tela_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "Validar mensagem: Senha inválida. no login inválido",
-        "description": "",
-        "id": "login;validar-mensagem:-\u003cmensagem\u003e-no-login-inválido;;3",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 625379176,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho login \"email@email.com\" e senha \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "email@email.com",
-                  "offset": 16
-                },
-                {
-                  "val": "",
-                  "offset": 42
-                }
-              ],
-              "location": "LoginSteps.preencho_login_e_senha(String,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 58477312,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico em Login",
-            "match": {
-              "location": "LoginSteps.clico_em_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 19009581,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "vejo mensagem \"Senha inválida.\" de campo não preenchido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Senha inválida.",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@login-campos-vazios"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar aplicação",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 16762260430,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na tela de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_tela_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 28,
-        "name": "Validar mensagem: E-mail inválido. no login inválido",
-        "description": "",
-        "id": "login;validar-mensagem:-\u003cmensagem\u003e-no-login-inválido;;4",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 1118314104,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho login \"\" e senha \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 16
-                },
-                {
-                  "val": "",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginSteps.preencho_login_e_senha(String,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 68578539,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico em Login",
-            "match": {
-              "location": "LoginSteps.clico_em_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 29322930,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "E-mail inválido.",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@login-campos-vazios"
           }
         ]
       }

@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Scenario Details - 2022/05/31 17:11:31</title> 
+  <title>Scenario Details - 2022/05/31 20:58:24</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -39,13 +39,13 @@
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2022/05/31 17:11:31</span> 
+    <span class="text-light">2022/05/31 20:58:24</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'Validar mensagem: Senha inválida. no login inválido'</h3> 
+     <h3>Scenario 'Login com sucesso'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -73,11 +73,11 @@
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
          <li class="list-group-item"><strong>4</strong> Step(s)</li> 
-         <li class="list-group-item"><strong>4</strong> passed</li> 
-         <li class="list-group-item"><strong>0</strong> failed</li> 
-         <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 16s 393ms</li> 
-         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_login.html">@login</a>, <a href="pages/tag-scenarios/tag_login-campos-vazios.html">@login-campos-vazios</a> </li> 
+         <li class="list-group-item"><strong>1</strong> passed</li> 
+         <li class="list-group-item"><strong>1</strong> failed</li> 
+         <li class="list-group-item"><strong>2</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 46s 370ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_login.html">@login</a>, <a href="pages/tag-scenarios/tag_login-sucesso.html">@login-sucesso</a> </li> 
         </ul> 
        </div> 
       </div> 
@@ -102,32 +102,37 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 15s 690ms
+            0m 16s 332ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
            <span class="text-success">passed</span> 
           </div> 
          </div> 
-         <div class="row row_passed"> 
+         <div class="row row_failed"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 2
            </nobr> 
           </div> 
           <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="LoginSteps.preencho_login_e_senha(String,String)"> Quando <strong></strong>preencho login "<strong>email@email.com</strong>" e senha "" </span> 
+           <span data-toggle="tooltip" title="LoginSteps.preencho_login_e_senha(String,String)"> Quando preencho login "<strong>eduardo.finotti@qazando.com</strong>" e senha "<strong>123456</strong>" </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 625ms
+            0m 30s 038ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-danger">failed</span> 
+          </div> 
+          <div class="w-100 mt-3"> 
+           <div class="col-9 text-left border border-danger m-auto"> 
+            <code>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#xuser"} (Session info: headless chrome=102.0.5005.61) For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MMB033899CPS.local', ip: '2804:1b2:6241:546b:3060:d19:3e32:8c55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/x6/bygd80596p1...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true} Session ID: ac631d31669736178ba6e435ca5f1af9 *** Element info: {Using=id, value=xuser} at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) at java.lang.reflect.Constructor.newInstance(Constructor.java:423) at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372) at org.openqa.selenium.By$ById.findElement(By.java:188) at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) at pages.LoginPage.preencheEmail(LoginPage.java:26) at steps.LoginSteps.preencho_login_e_senha(LoginSteps.java:25) at ✽.preencho login "eduardo.finotti@qazando.com" e senha "123456"(src/test/resources/features/login.feature:14) </code> 
+           </div> 
           </div> 
          </div> 
-         <div class="row row_passed"> 
+         <div class="row row_skipped"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 3
@@ -138,29 +143,29 @@
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 058ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> 
-         <div class="row row_passed"> 
+         <div class="row row_skipped"> 
           <div class="col-2 text-left"> 
            <nobr>
             Step 4
            </nobr> 
           </div> 
           <div class="col-6 text-left"> 
-           <span data-toggle="tooltip" title="LoginSteps.vejo_mensagem_de_campo_não_preenchido(String)"> Então vejo mensagem "<strong>Senha inválida.</strong>" de campo não preenchido </span> 
+           <span data-toggle="tooltip" title="LoginSteps.sou_logado_na_aplicação()"> Então sou logado na aplicação </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 019ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> </li> 
        </div> 
@@ -171,7 +176,7 @@
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2022/05/31 17:11:31.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2022/05/31 20:58:24.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -211,10 +216,10 @@
     "datasets": [
       {
         "data": [
-          15690,
-          625,
-          58,
-          19
+          16332,
+          0,
+          0,
+          0
         ],
         "backgroundColor": [
           "rgba(40, 167, 69, 1.000)",
@@ -228,7 +233,7 @@
       {
         "data": [
           0,
-          0,
+          30038,
           0,
           0
         ],

@@ -1,7 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumber
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.635 s <<< FAILURE! - in runner.RunCucumber
-Login.Login com sucesso  Time elapsed: 17.304 s  <<< FAILURE!
-org.junit.ComparisonFailure: Os textos não são iguais! expected:<[Login realizado]> but was:<[]>
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 46.812 s <<< FAILURE! - in runner.RunCucumber
+Login.Login com sucesso  Time elapsed: 46.388 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#xuser"}
+  (Session info: headless chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MMB033899CPS.local', ip: '2804:1b2:6241:546b:3060:d19:3e32:8c55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/x6/bygd80596p1...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac631d31669736178ba6e435ca5f1af9
+*** Element info: {Using=id, value=xuser}
 
